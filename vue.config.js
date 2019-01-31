@@ -19,14 +19,14 @@ module.exports = {
   productionSourceMap: true,
   // css相关配置
   css: {
-   // 是否使用css分离插件 ExtractTextPlugin
-   extract: true,
-   // 开启 CSS source maps?
-   sourceMap: false,
-   // css预设器配置项
-   loaderOptions: {},
-   // 启用 CSS modules for all css / pre-processor files.
-   modules: false
+    // 是否使用css分离插件 ExtractTextPlugin
+    extract: true,
+    // 开启 CSS source maps?
+    sourceMap: false,
+    // css预设器配置项
+    loaderOptions: {},
+    // 启用 CSS modules for all css / pre-processor files.
+    modules: false
   },
   // use thread-loader for babel & TS in production build
   // enabled by default if the machine has more than 1 cores
@@ -39,17 +39,16 @@ module.exports = {
   pwa: {},
   // webpack-dev-server 相关配置
   devServer: {
-   open: process.platform === 'darwin',
-   host: '0.0.0.0',
-   port: 8082,
-   https: false,
-   hotOnly: false,
-   proxy: null, // 设置代理
-   before: app => {}
+    open: process.platform === 'darwin',
+    host: '0.0.0.0',
+    port: 8082,
+    https: false,
+    hotOnly: false,
+    proxy: null, // 设置代理
+    before: app => {}
   },
   // 第三方插件配置
   pluginOptions: {
-   // ...
+    // ...
   }
- }
- 
+}
