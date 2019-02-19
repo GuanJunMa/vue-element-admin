@@ -7,17 +7,17 @@ import zhLocale from './zh.js'
 Vue.use(VueI18n)
 
 const messages = {
-    en: {
-        ...enLocale
-    },
-    zh: {
-        ...zhLocale
-    }
+  en: {
+    ...enLocale
+  },
+  zh: {
+    ...zhLocale
+  }
 }
 
 const i18n = new VueI18n({
-    locale: 'en',
-    messages
+  locale: 'en',
+  messages
 })
 
 export default i18n

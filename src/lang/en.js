@@ -1,5 +1,5 @@
 export default {
-    login: {
-        title: 'Login Form'
-    }
+  login: {
+    title: 'Login Form'
+  }
 }

@@ -1,5 +1,5 @@
 export default {
-    login: {
-        title: '登录系统'
-    }
+  login: {
+    title: '登录系统'
+  }
 }
