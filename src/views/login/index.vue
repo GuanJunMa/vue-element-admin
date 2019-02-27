@@ -5,6 +5,7 @@
         <h3 class="title">
           {{ $t('login.title') }}
         </h3>
+        <svg-icon icon-class="404" />
       </div>
     </el-form>
   </div>
