@@ -5,7 +5,9 @@
         <h3 class="title">
           {{ $t('login.title') }}
         </h3>
-        <svg-icon icon-class="404" />
+        <span class="svg-container">
+          <svg-icon icon-class="user" />
+        </span>
       </div>
     </el-form>
   </div>
@@ -47,6 +49,10 @@ $light_gray: #eee;
       margin: 0px auto 40px auto;
     }
   }
+}
+
+.svg-container {
+  color: #fff;
 }
 </style>
 
