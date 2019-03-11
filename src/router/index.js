@@ -1,9 +1,23 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
+import Layout from '@/views/layout/index.vue'
 
 Vue.use(VueRouter)
 
 const constantRouterMap = [
+  {
+    path: '',
+    component: Layout,
+    redirect: 'dashboard',
+    children: [
+      {
+        path: 'dashboard',
+        component: () => import('@/views/dashboard/index'),
+        name: 'Dashboard',
+        meta: { title: 'dashboard', icon: 'dashboard', noCache: true }
+      }
+    ]
+  },
   {
     path: '/login',
     component: () => import('@/views/login')
